@@ -2,7 +2,7 @@ Combintaion (factorial vs recursive)
 ===
 초기 코드
 -----
-##factorial combination
+## factorial combination
 
 *recursive factorial을 이용하여 m!, n! (m-n)!의 값을 구해 combination의 값을 구하였다.
 *int 형으로 숫자를 받는다는 가정 하에 코드를 작성했기에 int형이 아닌 다른 type의 변수가 들어왔을 때의 error처리는 별도로 하지 않았다.
