@@ -15,19 +15,19 @@ Combintaion (factorial vs recursive)
 ------------
 Code Review 후
 ----------
-##factorial combination
+<factorial combination>
 
 *초반에는 n!, m! 등의 각 결과 값을 다른 변수에 저장한 후 return 하도록 작성하였으나 변수가 여러개이면 다른 개발자가 이 코드를 보았을 때 헷갈려 할 것이라는 조언이 있어 수정하였다.
-''' x = n-m
+|||x = n-m
 +        result = factorial(n)/(factorial(n-m) * factorial(m))
 -        n = factorial(n)
 -        m = factorial(m)
 -        x = factorial(x)
 -        result = n/(x*m)
-         return result'''
+         return result|||
 위와 같았던 코드를
-'''result = factorial(n)/(factorial(n-m) * factorial(m))
-   return = result'''
+|||result = factorial(n)/(factorial(n-m) * factorial(m))
+   return = result|||
 로 수정하였다.
 
 *초반 코드에서는 x = m-n이라는 변수도 존재햤었는데, 이는 n과 m의 factorial을 계산한 후 (n-m)!을 계산하면 의도한 숫자와 다른 결과값이 나오기 때문에 초기에 x라는 변수를 입력했었다. 하지만 이는 순서를 바꿈으로써 해결되었고, 그 후 수정이 더해져 위와 같은 코드가 되었다.
